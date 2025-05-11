@@ -6,6 +6,6 @@ ENV MONGO_DB_USERNAME=admin \
 RUN mkdir -p testapp
 
 COPY . /testapp
-
+RUN npm install
 
 CMD ["node", "/testapp/server.js"]
